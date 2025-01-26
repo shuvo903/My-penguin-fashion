@@ -8,7 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <style>
         .font-bebas-neue {
             font-family: "Bebas Neue", serif;
@@ -24,18 +26,32 @@
 <body class="font-roboto">
     <header class="bg-[#FFFBF0] pl-4">
         <!-- navbar section start -->
-        <nav>
-
-        </nav>
+        <div class="max-w-7xl mx-auto">
+            <nav>
+                <div class="flex justify-between ">
+                    <div>
+                        <img class="w-72" src="icons/logo.png" alt="">
+                    </div>
+                    <div class="md:hidden">
+                        <ul class="flex ">
+                            <li class="mr-14">Home</li>
+                            <li class="mr-14">Product</li>
+                            <li class="mr-14">About us</li>
+                            <li>Contact us</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
         <!-- banner section start -->
-        <div class="md:flex md:items-center md:justify-around">
+        <div class="md:flex md:items-center md:justify-between max-w-7xl mx-auto">
             <div>
                 <h1 class="text-7xl	uppercase font-bebas-neue">
                     <span class="text-orange-400	">Be the Penguins</span> <br> <span class="text-[#363958]	"> of
                         Winter</span>
                 </h1>
-                <p>Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry.</p>
+                <p class="font-roboto text-[#3E3E3E]">Trendy, affordable clothing and accessories to elevate your style
+                    every day.</p>
                 <button
                     class=" bg-amber-200 py-4 px-8 rounded-xl text-white font-medium bg-gradient-to-b from-[#A4BC46] to-[#85A019] mt-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
@@ -52,13 +68,13 @@
     </header>
     <main class="max-w-7xl mx-auto">
         <!-- Woman Jacket section -->
-        <section class="my-12">
+        <section class="my-8">
             <h3 class="text-5xl text-[#363958] font-bebas-neue mt-12">Woman Jacket</h3>
             <!-- Jacket card container -->
-            <div class="grid grid-clos-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-3">
+            <div class="grid grid-clos-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-3">
                 <!-- jacket card-1 -->
                 <div class="p-5  rounded-3xl drop-shadow-lg space-y-4 bg-[#FFFFFF] ">
-                    <img class="p-5 rounded-3xl bg-[#F1F1F1]" src="images/jacket-1.png" alt="">
+                    <img class="p-5 rounded-3xl bg-[#F1F1F1] mw-72" src="images/jacket-1.png" alt="">
                     <h4 class="text-2xl font-bold text-[#363958]">Yellow Coat Jacket </h4>
                     <p>Lorem Ipsum is simply dummy text of the
                         printing and typesetting industry.</p>
@@ -179,26 +195,52 @@
                 </div>
             </div>
         </section>
-     </main>
-    <footer class="max-w-7xl mx-auto">
-        <div class="flex mt-32">
-            <div >
-                <div class="flex items-center bg-white rounded-2xl py-5 pr-16 pl-7 drop-shadow-xl ">
-                     <div>
-                        <img class="mr-9" src="icons/house.png" alt="">
-                     </div>
-                     <div>
+    </main>
+    <footer class=" max-w-7xl mx-auto">
+        <div class="flex justify-between mt-32 sm:flex-col-reverse">
+            <!-- card-1 -->
+            <div>
+                <div class="flex items-center bg-white rounded-2xl py-5 pr-16 pl-7 drop-shadow-xl w-11/12">
+                    <div>
+                        <img class="mr-9 w-16" src="icons/house.png" alt="">
+                    </div>
+                    <div class="ml-9">
                         <h5 class="font-roboto font-bold text-[#363958]">Find the Perfect Fit</h5>
-                     <br>
-                     <p class="font-roboto trxt-[#3E3E3E]">Everybody is different, which is why we
-                        offer styles for every body.</p>
+                        <br>
+                        <p class="font-roboto text-[#3E3E3E]">Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="flex items-center bg-white rounded-2xl py-5  pl-7 drop-shadow-xl mt-4 w-11/12">
+
+                    <div>
+                        <img class="mr-9 w-16" src="icons/box.png" alt="">
+                    </div>
+                    <div class="ml-9">
+                        <h5 class="font-roboto font-bold text-[#363958]">Free Exchanges</h5>
+                        <br>
+                        <p class="font-roboto text-[#3E3E3E]">One of the many reasons you can shop
+                            with peace of mind.</p>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="flex items-center bg-white rounded-2xl py-5 pr-16 pl-7 drop-shadow-xl mt-4 w-11/12">
+                    <div>
+                        <img class="mr-9 w-16" src="icons/question.png" alt="">
+                    </div>
+                    <div class="ml-9">
+                        <h5 class="font-roboto font-bold text-[#363958]">Contact Our Seller</h5>
+                        <br>
+                        <p class="font-roboto text-[#3E3E3E]">They are here to help you. That's quite
+                            literally what we pay them for.</p>
                     </div>
                 </div>
             </div>
-        <div>
+            <div class="lg:w-10/12 md:w-10/12 sm:w-full">
                 <img src="images/shopping.png" alt="">
             </div>
-         </div>
+        </div>
     </footer>
 
 </body>
